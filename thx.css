@@ -1,0 +1,85 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+}
+.content {
+    text-align: center;
+}
+.content-info{
+    width: 1360px;
+    margin: 0 auto;
+}
+.content-info-logo{
+    margin-top: 24px;
+    text-align: center;
+}
+.content-info-image{
+    margin-top: 64px;
+}
+.content-info-title{
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+.content-info-text{
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 24px;
+}
+.content-info-btn{
+    margin-top: 48px;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+}
+.content-info-btn-trial{
+    margin: 0 12px;
+    display: block;
+    width: 180px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 24px;
+    color: #FF004C;
+    border: 1px solid red;
+    outline: none;
+    cursor: pointer;
+}
+.content-info-btn-pro{
+    margin: 0 12px;
+    display: block;
+    width: 180px;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 24px;
+    color: #FF004C;
+    border: 1px solid red;
+    outline: none;
+    cursor: pointer;
+}
+.content-info-btn-trial:hover {
+    background: #FF004C;
+    color: white;
+}
+.content-info-btn-pro:hover {
+    background: #FF004C;
+    color: white;
+}
+
+
+
+
+
+
+/*   Медиа  */
+@media (max-width:767px) {
+    .content-info{
+        min-width: 320px;
+        width: 100%;
+    }
+    .content-info-text{
+        font-size: 11px;
+        line-height: 28px;
+    }
+}

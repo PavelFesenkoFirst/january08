@@ -1,0 +1,362 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: normal;
+    margin: 10px 10px 10px 10px;
+}
+.content{
+    width: 1360px;
+    margin: 0 auto;
+}
+.inner{
+    display: flex;
+}
+.info-content{
+    flex: 1 1 40%;
+}
+.register-content-form{
+    padding: 0px 130px 0px 170px;
+}
+.register-content-form-logo{
+    margin-top: 25px;
+    text-align: center;
+}
+.register-content-form-title{
+    margin-top: 80px;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 38px;
+}
+.pink{
+    position: relative;
+    z-index: 1;
+}
+.pink:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background: rgba(255, 172, 196, 1);
+    bottom: 10px;
+    left: 0;
+    display: block;
+    z-index: -1;
+}
+.register-content-form-info{
+    margin-top: 16px;
+    color: #323232;
+    font-size: 16px;
+    line-height: 24px;
+}
+.register-content-form-info-a{
+    font-weight: bold;
+    line-height: 24px;
+    color: red;
+}
+.name-inputs{
+    display: flex;
+}
+.form-input{
+    position: relative;
+}
+.input-firstName{
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-right: 32px;
+    height: 30px;
+    width: 228px;
+    border-bottom: 2px solid #A1A3A7;
+}
+.input-firstName:focus{
+    border-bottom: 2px solid #323232;
+}
+.input-firstName:focus::placeholder{
+    transform: translateY(-10px)
+}
+.input-firstName:optional:invalid {
+    border-color: red;
+}
+.input-firstName:valid{
+    background: url("media/Vector.png");
+    background-size: 15px 10px;
+    background-repeat: no-repeat;
+    background-position: 481px 15px;
+}
+
+
+.form-input-email{
+    margin-top: 48px;
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    width: 492px;
+    border-bottom: 2px solid #A1A3A7;
+}
+.form-input-btn{
+    display: block;
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+    background: #FF004C;
+    border-radius: 24px;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 56px 0 0 auto;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+.info-content{
+    padding-top: 160px;
+    padding-left: 135px;
+    padding-right: 115px;
+    padding-bottom: 260px;
+    background: #E5E5E5;
+    background-image: url("media/Background.png");
+    background-size: cover;
+    background-position: top -52px right -52px;
+    background-repeat: no-repeat;
+}
+.info-content-title{
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+.info-content-ul{
+    margin-top: 8px;
+}
+.info-content-ul-li{
+    background: url("media/Group 421.png") no-repeat;
+    margin: 8px 0;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 30px;
+    position: relative;
+}
+.info-content-some{
+    font-size: 16px;
+    line-height: 24px;
+    position: relative;
+}
+.info-content-industry{
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+}
+.logo{
+    display: flex;
+}
+.techlogo{
+    background-image: url('media/Layer 1.png');
+    width: 88px;
+    height: 24px;
+    margin-right: 20px;
+    margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+.form-input-company{
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-top: 80px;
+    width: 492px;
+    border-bottom: 2px solid #A1A3A7;
+}
+.form-input-phone{
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-top: 80px;
+    width: 492px;
+    border-bottom: 2px solid #A1A3A7;
+}
+.form-input-password{
+    outline: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    margin-top: 80px;
+    width: 492px;
+    border-bottom: 2px solid #A1A3A7;
+}
+.check-box-form{
+    margin-top: 24px;
+    font-size: 14px;
+    line-height: 21px;
+    color: #A1A3A7;
+}
+.form-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 105px;
+}
+.form-btn a{
+    margin: auto 0 auto 0 ;
+    display: block;
+    text-decoration: none;
+    color: #A1A3A7;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+}
+.form-account{
+    display: block;
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+    background: #FF004C;
+    border-radius: 24px;
+    color: white;
+    border: none;
+    outline: none;
+    margin: 0 0 0 auto;
+    cursor: pointer;
+}
+.modal-window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 100;
+    visibility: hidden;
+    opacity: 0;
+    cursor: pointer;
+    transition: opacity 0.7s ease 0s;
+}
+.modal-container{
+    width: 784px;
+    height: 704px;
+    margin: 16px auto;
+    padding: 28px 35px 28px 35px;
+    box-sizing: border-box;
+    background-color: white;
+    position: relative;
+    overflow-y: scroll;
+    z-index: 10;
+    cursor: auto;
+}
+.modal-container-close{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+.modal-container-title{
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 29px;
+    text-align: center;
+}
+.modal-container-info{
+    color: #323232;
+    font-size: 14px;
+    line-height: 21px;
+}
+.modal-container-info p{
+    margin-top: 24px;
+}
+.modal-container-title1{
+    margin-top: 40px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+}
+.visible{
+    display: block;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media all and (max-width: 767px) {
+    body{
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: normal;
+        margin: 0 auto;
+    }
+    .content{
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 350px;
+    }
+    .inner{
+
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .register-content-form{
+        width: 100%;
+    }
+    .register-content-form-title{
+        margin-left: 20px;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 120%;
+        color: #000000;
+    }
+    .register-content-form-info{
+        margin-left: 20px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 150%;
+        color: #323232;
+    }
+    .main-form{
+align-items: center;
+    }
+    .name-inputs{
+        display: flex;
+        flex-direction: column;
+    }
+    .input-firstName{
+        margin-top: 48px;
+        outline: none;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        margin-left: 20px;
+        width: 325px;
+        border-bottom: 2px solid #A1A3A7;
+    }
+    .form-input-email{
+        margin-top: 48px;
+        outline: none;
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        margin-left: 20px;
+        width: 325px;
+        border-bottom: 2px solid #A1A3A7;
+    }
+
+
+    .form-input-btn{
+
+        margin-bottom: 137px;
+    }
+}
