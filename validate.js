@@ -2,11 +2,11 @@
 //     $("#phonenumber").mask("+38 (099) 99-99-999");
 // });
 
-let firstName = document.querySelector('.form-input-name');
-let firstName1 = document.querySelector('.form-input-name1');
-let firstEmail = document.querySelector('.form-input-email');
+let firstName = document.querySelector('.form-input-email');
+let firstName1 = document.querySelector('.form-input-email1');
+let firstEmail = document.querySelector('.form-input-email2');
 
-firstName.oninput = function (){
+firstName.oninput = () =>{
     let error_my = document.querySelector('.error');
     // let valid = document.querySelector('.my-valid');
     console.log(firstName.value);
@@ -23,7 +23,6 @@ firstName.oninput = function (){
 
 firstName1.oninput = () =>{
     let error_my = document.querySelector('.error1');
-    // let valid = document.querySelector('.my-valid');
     console.log(firstName1.value);
     if(firstName1.value.length < 3){
         error_my.style.visibility = "visible";
@@ -37,7 +36,6 @@ firstName1.oninput = () =>{
 }
 firstEmail.oninput = () =>{
     let error_my = document.querySelector('.error2');
-    // let valid = document.querySelector('.my-valid');
     console.log(firstEmail.value);
     if(firstEmail.value.length < 3){
         error_my.style.visibility = "visible";
@@ -51,11 +49,8 @@ firstEmail.oninput = () =>{
 }
 
 function check(){
-    let checkInputName = document.querySelector('.form-input-name');
-    let checkInputName1 = document.querySelector('.form-input-name1');
-    let checkInputEmail = document.querySelector('.form-input-email');
     let formBtn = document.querySelector('.form-account');
-    if (checkInputName.value.length < 3 && checkInputName1.value.length < 3 && checkInputEmail.value.length < 0 ){
+    if (firstName.value.length < 3 && firstName1.value.length < 3 && firstEmail.value.length < 0 ){
         formBtn.setAttribute('disabled', 'disabled');
     }else{
         formBtn.removeAttribute('disabled');

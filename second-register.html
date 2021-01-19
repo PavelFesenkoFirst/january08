@@ -22,10 +22,13 @@
                 <p>Try Met Jip for free for 14 days. Do you already have a login than you can.
                     <a href="#">Login here</a></p>
             </div>
-            <form action="thx.html" method="LINK" class="second-form my-form">
-                <input type="text" id="company" onclick="CustomValidation()" placeholder="Company" minlength="3" class="form-input-company">
-                <input type="tel" id="phonenumber" minlength="13" placeholder="Phone" class="form-input-phone">
-                <input type="password" id="password" min="4" minlength="4" placeholder="Password" class="form-input-password">
+            <form action="thx.html" method="LINK" class="second-form-my-form">
+                <input type="text" placeholder="Company" class="form-input-email">
+                <span class="error"> some message </span>
+                <input type="tel" placeholder="Phone" class="form-input-email1">
+                <span class="error1"> some message </span>
+                <input type="password" placeholder="Password" class="form-input-email2">
+                <span class="error2"> some message </span>
                 <div class="check-box-form">
                     <input type="checkbox" id="acceptPrivacy">Accept  <a class="open-modal" href="#modal"><u class="links">Privacy Statementu</u></a> and
                     <a class="open-modal" href="#modal"><u class="links">Terms & Conditions</u></a>
@@ -33,7 +36,7 @@
                 <div class="form-btn">
                     <form action="thx.css" method="LINK">
                         <a href="index.html">Back</a>
-                        <button type="submit" class="form-account">Create free account</button>
+                        <button type="submit" class="form-account" disabled>Create free account</button>
                     </form>
                 </div>
             </form>
@@ -86,9 +89,10 @@
 <div class="overlay overlay-modal"></div>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="jquery.maskedinput.min.js"></script>
 <script src="modal.js"></script>
-<script src="validate.js"></script>
+<script src="new_validate.js"></script>
+<!--<script src="validate.js"></script>-->
+
+
 </body>
 </html>

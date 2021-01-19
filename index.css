@@ -213,7 +213,7 @@ body{
     font-size: 18px;
     line-height: 22px;
 }
-@media all and (max-width: 767px) {
+@media all and (max-width: 769px) {
     body{
         font-family: 'Nunito Sans', sans-serif;
         font-weight: normal;
@@ -253,7 +253,7 @@ body{
         display: flex;
         flex-direction: column;
         /*margin-left: 0px;*/
-        margin-left: 20px;
+        /*margin-left: 20px;*/
     }
     .btn-form{
         margin: 0 auto;
@@ -284,12 +284,12 @@ body{
         border-left: none;
         border-right: none;
         border-top: none;
-        margin-top: 50px;
-        width: 95%;
+        margin-top: 30px;
+        width: 99%;
         height: 30px;
         margin-right: 20px;
         border-bottom: 2px solid #A1A3A7;
-        margin-left: 20px;
+        /*margin-left: 20px;*/
     }
     .form-account{
         margin-top: 60px;
@@ -314,7 +314,7 @@ body{
         background: url("media/Vector.png");
         background-size: 15px 10px;
         background-repeat: no-repeat;
-        background-position: 335px 15px;
+        background-position: 95% 15px;
     }
 
 }
